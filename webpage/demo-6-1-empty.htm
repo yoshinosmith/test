@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="alert fade in">
+            <b>警告！</b>这是一个警示框！
+            <button type="button" class="btn close" data-dismiss="alert">&times;</button>
+        </div>
+
+        <div class="alert alert-danger fade in">
+            <b>警告！</b>这是一个警示框！
+            <button type="button" class="btn close" data-dismiss="alert">&times;</button>
+        </div>
+
+
+        <div class="alert alert-warning">
+            <b>警告！</b>这是一个警示框！
+            <button type="button" class="btn close" data-dismiss="alert">&times;</button>
+        </div>
+
+
+        <div class="alert alert-info">
+            <b>警告！</b>这是一个警示框！
+            <button type="button" class="btn close" data-dismiss="alert">&times;</button>
+        </div>
+
+
+        <div class="alert alert-success">
+            <b>警告！</b>这是一个警示框！
+            <button type="button" class="btn close" data-dismiss="alert">&times;</button>
+        </div>
+
+        <div class="progress">
+            <div class="progress-bar" style="width: 50%"></div>
+        </div>
+
+        <div class="progress">
+            <div class="progress-bar progress-bar-danger" style="width: 50%"></div>
+        </div>
+
+        <div class="progress">
+            <div class="progress-bar progress-bar-warning" style="width: 50%"></div>
+        </div>
+
+        <div class="progress">
+            <div class="progress-bar progress-bar-info" style="width: 50%"></div>
+        </div>
+
+        <div class="progress">
+            <div class="progress-bar progress-bar-success" style="width: 50%"></div>
+        </div>
+
+        <div class="progress">
+            <div class="progress-bar progress-bar-warning" style="width: 20%"></div>
+            <div class="progress-bar progress-bar-info" style="width: 10%"></div>
+            <div class="progress-bar progress-bar-success" style="width: 30%"></div>
+        </div>
+
+        <div class="media">
+            <div class="media-left pull-right media-bottom"><img src="imgs/expo.png" alt="expo" class="media-object"></div>
+            <div class="media-body">说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字，说明文字</div>
+        </div>
+
+        <button type="button" title="Yes! this is a button" id="btn1" data-toggle="downmenu" > button </button>
+
+        <div class="dropdown">
+            <a href="#" id="a1">Blog<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="#t3" data-toggle="tab">menu</a></li>
+                <li><a href="#t4" data-toggle="tab">menu</a></li>
+                <li><a href="#t5" data-toggle="tab">menu</a></li>
+            </ul>
+        </div>
+
+        <script type="text/javascript">
+            $(function(){
+                $("#a1").dropdown();
+                $(".dropdown-menu a").clearMenus();
+            });
+        </script>
+    </div>
+</body>
+
+</html>

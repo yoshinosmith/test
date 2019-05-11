@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $("#tabs a").on("click", function(){
+                $(this).tab('show');
+            });
+
+            $("#first-btn").on("click", function(){
+                $("#tabs a:first").tab('show');
+            });
+
+
+            $("#last-btn").on("click", function(){
+                $("#tabs a:last").tab('show');
+            });
+        });
+    </script>
+</head>
+
+<body data-spy="scroll" data-target="#scroll-nav" >
+    <ul class="nav nav-tabs" id="tabs">
+        <li><a href="#section1">1</a></li>
+        <li><a href="#section2">2</a></li>
+        <li><a href="#section3">3</a></li>
+    </ul>
+    <div class="tab-content">
+        <div id="section1" class="tab-pane">1</div>
+        <div id="section2" class="tab-pane">2</div>
+        <div id="section3" class="tab-pane">3</div>
+    </div>
+
+    <button type="button" class="btn btn-success" id="first-btn">first</button>
+    <button type="button" class="btn btn-success" id="last-btn">last</button>
+</body>
+
+</html>

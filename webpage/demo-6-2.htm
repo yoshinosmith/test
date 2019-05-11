@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link href="prettify/prettify.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- nav -->
+        <div>
+            <ul class="nav nav-pills">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+        <!-- nav-pills -->
+        <div>
+            <ul class="nav nav-pills">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li class="disabled"><a href="#">Blog</a></li>
+            </ul>
+        </div>
+        <!-- nav-tabs -->
+        <div>
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li class="disabled"><a href="#">Blog</a></li>
+            </ul>
+        </div>
+        <!-- nav-tabs -->
+        <div>
+            <ul class="nav nav-pills nav-stacked">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+        <!-- nav dropdown-menu -->
+        <div>
+            <ul class="nav nav-pills">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li class="dropdown">
+                    <a href="#" data-toggle="dropdown">Blog<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">menu</a></li>
+                        <li><a href="#">menu</a></li>
+                        <li><a href="#">menu</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- nav dropdown-menu -->
+        <div>
+            <ul class="nav nav-pills">
+                <li><a href="#t1" data-toggle="tab">Home-1</a></li>
+                <li><a href="#t2" data-toggle="tab">About</a></li>
+                <li class="dropdown">
+                    <a href="#" data-toggle="dropdown">Blog<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#t3" data-toggle="tab">menu</a></li>
+                        <li><a href="#t4" data-toggle="tab">menu</a></li>
+                        <li><a href="#t5" data-toggle="tab">menu</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div id="t1" class="tab-pane">1</div>
+                <div id="t2" class="tab-pane fade">2</div>
+                <div id="t3" class="tab-pane">3</div>
+                <div id="t4" class="tab-pane">4</div>
+                <div id="t5" class="tab-pane">5</div>
+            </div>
+        </div>
+
+		<!--navbar-->
+		<div class="navbar navbar-default">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Brand Name</a>
+			</div>
+			<ul class="nav navbar-nav navbar-right">
+                <li><a href="#t1" data-toggle="tab">Home</a></li>
+                <li><a href="#t2" data-toggle="tab">About</a></li>
+            </ul>
+		</div>
+
+
+        <!-- navbar dropdown-menu collapse -->
+        <div class="navbar navbar-default">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Brand Name</a>
+			</div>
+            <div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+	                <li><a href="#t1" data-toggle="tab">Home</a></li>
+	                <li><a href="#t2" data-toggle="tab">About</a></li>
+	            </ul>
+            </div>
+		</div>
+
+		<!-- navbar dropdown-menu collapse responsive-->
+        <div class="navbar navbar-default">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Brand Name</a>
+				<a class="navbar-toggle btn" data-toggle="collapse" data-target=".collapse-div1">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+				</a>
+			</div>
+            <div class="collapse navbar-collapse collapse-div1">
+				<ul class="nav navbar-nav">
+	                <li><a href="#t1" data-toggle="tab">Home</a></li>
+	                <li><a href="#t2" data-toggle="tab">About</a></li>
+	            </ul>
+            </div>
+		</div>
+
+        <!--breadcrumb-->
+        <ul class="breadcrumb">
+            <li><a href="">1</a><span class="divider"></span></li>
+            <li><a href="">1</a><span class="divider"></span></li>
+            <li><a href="">1</a><span class="divider"></span></li>
+        </ul>
+        <!--pagination-->
+        <ul class="pagination">
+            <li><a href="#">Prev</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li class="disabled"><a href="#">Next</a></li>
+        </ul>
+        <!--pager-->
+        <ul class="pager">
+            <li><a href="#">Prev</a></li>
+            <li><a href="#">Next</a></li>
+        </ul>
+        <!--lable and badge-->
+        <span class="label label-default">标签默认样式</span>
+        <span class="label label-info">信息标签</span>
+        <span class="label label-success">成功标签</span>
+        <span class="label label-danger">危险标签</span>
+        <span class="label label-warning">警告标签</span>
+        <span class="label label-primary">首要标签</span>
+        <span class="badge">徽章样式</span>
+        <!--thumbnail-->
+        <br>
+        <img src="imgs/jqueryapi.png" class="img-rounded">
+        <img src="imgs/jqueryapi.png" class="img-thumbnail">
+        <img src="imgs/jqueryapi.png" class="img-circle">
+        <img src="imgs/jqueryapi.png" class="img-responsive">
+    </div>
+</body>
+
+</html>
